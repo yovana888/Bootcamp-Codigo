@@ -111,7 +111,7 @@ body{
 #section_contacto > .container-form{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap:20px
 }
 
@@ -275,5 +275,8 @@ input:focus, textarea:focus {
     #contenido > section {
         padding-left: 25px;
         padding-right: 25px;
+    }
+    #section_contacto > .container-form{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }

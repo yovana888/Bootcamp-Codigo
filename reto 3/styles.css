@@ -1,0 +1,279 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+#section_imagen{
+    padding-top: 8%;
+    height: 100vh;
+    background-image: url('./image1.png');
+    background-repeat: no-repeat;
+    background-position: center 5%;
+    background-size: cover;
+    color:white;
+    font-weight: 700;
+}
+
+#section_imagen >  div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14%;
+    background: rgba(114, 153, 254, 0.5);
+    max-width: 365px;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+#contenido > section {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+    height: auto;
+}
+
+#contenido > section > h2{
+    text-align: center;
+}
+
+/********************Section Sobre mi*****************************/
+#section_sobre_mi{
+    background: #7299FE;
+}
+
+#section_sobre_mi > h2{
+    color: #1D06A7;
+}
+
+#section_sobre_mi > p {
+    font-size: 14px;
+    line-height: 24px;
+}
+/********************Section Skills*****************************/
+#section_skills{
+    background: #9122FF;
+}
+
+#section_skills > h2{
+    color: #26CC4B;
+}
+
+#section_skills > .list_skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+/********************Section Portafolio*****************************/
+#section_portafolio{
+    background: #FFD233;
+}
+
+#section_portafolio > h2 {
+    color:#00AD84;
+}
+
+#section_portafolio > .container_portafolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-gap: 25px;
+    align-items: center;
+    justify-items: center;
+}
+
+/********************Section Clientes*****************************/
+#section_clientes{
+    background: #3F4E62;
+}
+#section_clientes > h2{
+    color: #ADFF28;
+}
+#section_clientes .container_clientes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-row-gap: 25px;
+    align-items: center;
+    justify-items: center;
+}
+
+/*********************Section Contacto*********************/
+
+#section_contacto{
+ background: #1687A0;
+}
+
+#section_contacto > h2{
+    color: #FF1B1B;
+}
+
+#section_contacto > .container-form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap:30px
+}
+
+/********************Clases*****************************/
+.subTitle{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.text-white{
+    color:white;
+}
+
+.title{
+    font-size: 64px;
+    margin-left: 40%;
+}
+
+.btn{
+    display: inline-block;
+	font-weight: 450;
+	text-align: center;
+	border: 1px solid transparent;
+	padding: .375rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	color: #fff;
+    width: 150px;
+    cursor: pointer;
+    height: 56px;
+}
+
+.btn-primary{
+    background:#D16FFF;
+}
+
+.btn-secondary{
+    background:#233451;
+}
+
+.container-progress{
+    border-radius: 10px;
+    height: 20px;
+    background: white;
+}
+
+.bar-progress{
+    background: #57EFF9;
+    border-radius: 20px;
+    height: 20px;
+    width: 0;
+}
+
+input {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: .3rem;
+    color:#3d3d3d;
+}
+
+
+textarea{
+    border: 1px solid #ccc;
+    min-height: 6rem;
+    resize: vertical;
+    padding: 0.5rem 0 0 0.5rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    color:#3d3d3d;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #685ef7;
+}
+
+
+/********************Progress Bar*****************************/
+
+#html_load{
+    animation: load1 4s normal forwards;
+}
+
+@keyframes load1 {
+    0% { width: 0; }
+    100% { width: 98%; }
+}
+
+#css_load{
+    animation: load2 4s normal forwards;
+}
+
+@keyframes load2 {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+
+#js_load{
+    animation: load3 4s normal forwards;
+}
+
+@keyframes load3 {
+    0% { width: 0; }
+    100% { width: 72%; }
+}
+
+
+#vue_load{
+    animation: load4 4s normal forwards;
+}
+
+@keyframes load4 {
+    0% { width: 0; }
+    100% { width: 92%; }
+}
+
+#react_load{
+    animation: load5 4s normal forwards;
+}
+
+@keyframes load5 {
+    0% { width: 0; }
+    100% { width: 40%; }
+}
+
+#node_load{
+    animation: load6 4s normal forwards;
+}
+
+@keyframes load6 {
+    0% { width: 0; }
+    100% { width: 56%; }
+}
+
+
+/********************Media Query*****************************/
+
+
+@media (max-width: 552px) {
+    #section_imagen{
+        background-position: 25% 5%;
+    }
+
+    #section_imagen >  div {
+        margin-left: 8%;
+        width: 250px;
+        margin-top: 90%;
+    }
+
+    .title{
+        margin-left: 30%;
+    }
+
+    .subTitle{
+        font-size: 25px;
+    }
+
+    #contenido > section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

@@ -116,6 +116,10 @@ body{
     grid-template-columns: 2fr 1fr 1fr 2fr;
 }
 
+#content-footer > .logo{
+    margin-bottom: 30px;
+}
+
 #copy{
     text-align: end;
     color: white;
@@ -193,7 +197,6 @@ body{
 
 .logo {
     width: 170px;
-    margin-bottom: 50px;
 }
 
 .logo-white {

@@ -1,0 +1,78 @@
+@import './varaibles.css';
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-theme);
+}
+
+#container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.card{
+    background: var(--bg-white);
+    width: 50%;
+    margin-bottom: 25px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    border-radius: 0.90rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card .contador{
+    padding: 8px;
+}
+
+.card .contador .number_count{
+    background: var(--bg-number);
+    display:flex;
+    border-radius: 9px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card > .comentary{
+    display: flex;
+    flex-direction: column;
+}
+
+.card > .comentary > .user{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.comentary > .user > .user_name{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+}
+
+.user_name > span:nth-child(2) {
+    color:var(--color-gray);
+    font-weight: 500;
+}
+
+.user_name > span:nth-child(3) {
+    color:var(--color-gray-2)
+}
+
+
+.avatar{
+    border-radius: 50%;
+    width: 30px;
+}
+
+.texto{
+    margin-top: 12px;
+    color:var(--color-gray-2)
+}

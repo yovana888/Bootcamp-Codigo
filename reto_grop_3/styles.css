@@ -1,0 +1,36 @@
+:root{
+    --color-blue: #1F3F68;
+    --color-text:rgba(0, 0, 0, 0.6);
+    --color-blue-2:#356EAD;
+}
+
+.title_section{
+    color:var(--color-blue-2);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.title_card{
+    font-weight: 700;
+    font-size: 18px;
+    color:var(--color-blue)
+}
+
+.text_card{
+    color:var(--color-text);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.author{
+    font-weight: 700;
+    color:var(--color-blue);
+    font-size: 14px;
+}
+
+.icons{
+    display:flex;
+    justify-content: end;
+    gap:15px;
+    align-items: center;
+}

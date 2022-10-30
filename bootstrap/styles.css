@@ -1,0 +1,15 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.badge{
+    position: absolute;
+    margin-top:-35px;
+}

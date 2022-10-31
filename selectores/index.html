@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Js</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <div class="main">
-    <h1>Cards with AppendChild</h1>
-    <div class="cards">
-
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="title"><button class="btn btn-primary" id="btn-random">Other Image Random</button></div>
+        <span id="theme">Modo Claro 🌞</span>
+      </div>
+      <div class="container">
+        <img src="https://picsum.photos/300/300?random=1" alt="random" id="image-random">
+      </div>
+      <div class="nav">
+        <h1>Cards with AppendChild</h1>
+      </div>
+      <div class="cards"></div>
     </div>
-  </div>
-  
+
     <script type="module" src="./selectores.js"></script>
-</body>
+  </body>
 </html>
